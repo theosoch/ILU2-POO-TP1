@@ -20,11 +20,15 @@ public class ScenarioCasDegrade {
 			e.printStackTrace();
 		}
 		
-		etal.occuperEtal(gaulouis, "chaussettes", 1);
+		//		
 		
+		etal.occuperEtal(gaulouis, "chaussettes", 1);
+
+		System.out.println("TEST acheteur null");
 		System.err.println("".equals(etal.acheterProduit(1, null)));
 
 		try {
+			System.out.println("TEST ");
 			etal.acheterProduit(0, gaulouis);
 		} catch(IllegalArgumentException e) {
 			e.printStackTrace();
